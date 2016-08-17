@@ -3,3 +3,9 @@
 <p>
   We hope you find what you're looking for.
 </p>
+
+<ul>
+  {{#each model as |place|}}
+    <li>{{place.location}} - {{place.description}}</li>
+    {{/each}}
+</ul>
