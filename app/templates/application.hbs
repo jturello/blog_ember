@@ -1,11 +1,18 @@
 <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <ul>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+      </ul>
+    </div>
+  </nav>
   <header class = "jumbotron">
     <h1>Vacation Blog</h1>
   </header>
     {{outlet}}
   <hr>
   <footer>
-    {{#link-to 'about'}}About{{/link-to}} <br>
-    {{#link-to 'contact'}}Contact{{/link-to}}
+
   </footer>
 </div>
