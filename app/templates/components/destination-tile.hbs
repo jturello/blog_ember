@@ -1,0 +1,8 @@
+<li>
+  {{destination.location}} - {{destination.description}}
+  {{#if isImageShowing}}
+    <p><img src ={{destination.image}} alt={{destination.location}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Show Image</button>
+  {{/if}}
+</li>

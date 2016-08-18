@@ -5,7 +5,13 @@
 </p>
 
 <ul>
-  {{#each model as |place|}}
-    <li>{{place.location}} - {{place.description}}</li>
-    {{/each}}
+  {{#each model as |destination|}}
+    {{destination-tile destination=destination}}
+  {{/each}}
 </ul>
+
+<!-- <ul>
+  {{#each model as |rental-from-template|}}
+    {{rental-tile rental-in-component=rental-from-template}}
+  {{/each}}
+</ul>  This is the literal explanation of what above is doing-->
