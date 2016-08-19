@@ -9,12 +9,23 @@ export default Ember.Route.extend({
     save3(params) {
       var newDestination = this.store.createRecord('destination', params);
       newDestination.save();
-      this.transtionTo('index');
+      this.transitionTo('index');
     },
 
-    destroyDestination(destination) {
-      destination.destroyRecord();
-      this.transitionTo('index');
-    }
+    // update(destination, params) {
+    //   // debugger;
+    //   Object.keys(params).forEach(function(key) {
+    //     if(!((params[key]===undefined) || (params[key]===""))) {
+    //       destination.set(key, params[key]);
+    //     }
+    //   });
+    //   destination.save();
+    //   this.transitionTo('index');
+    // },
+    //
+    // destroyDestination(destination) {
+    //   destination.destroyRecord();
+    //   this.transitionTo('index');
+    // }
   }
 });

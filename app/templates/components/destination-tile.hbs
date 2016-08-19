@@ -1,9 +1,8 @@
 <li>
-  {{destination.location}} - {{destination.description}}
+  {{#link-to 'destination' destination.id}}{{destination.location}} - {{destination.description}}{{/link-to}}
   {{#if isImageShowing}}
     <p><img src={{destination.image}} alt={{destination.location}} {{action 'imageHide'}}></p>
   {{else}}
     <button {{action 'imageShow'}}>Show Image</button>
   {{/if}}
-    <button {{action 'delete' destination}}>Delete</button>
 </li>
